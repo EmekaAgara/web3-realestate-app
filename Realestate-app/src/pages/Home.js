@@ -3,7 +3,7 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import bg from "../images/homeBG.jpg"
 import logo from "../images/rentr.png"
-import {ConnectButton, Select} from "web3uikit"
+import {ConnectButton, Select, DatePicker} from "web3uikit"
 
 const Home = () => {
 
@@ -43,17 +43,17 @@ const Home = () => {
 
                 {
                   id:"lg",
-                  label:"Victoria Island"
-                },
-
-                {
-                  id:"lg",
                   label:"Lekki, Lagos"
                 },
 
                 {
                   id:"lg",
-                  label:"Abuja, Nigeria"
+                  label:"Ikeja, Lagos"
+                },
+
+                {
+                  id:"lg",
+                  label:"Abuja"
                 },
               ]}
           />
@@ -62,11 +62,18 @@ const Home = () => {
         <div className="vl"/>
         <div className="inputs">
           Check In
-
+          <DatePicker
+            id="CheckIn"
+            onChange={(event) => console.log(event.date)}
+          />
         </div>
         <div className="vl"/>
         <div className="inputs">
           Check Out
+          <DatePicker
+            id="CheckOut"
+            onChange={(event) => console.log(event.date)}
+          />
 
         </div>
         <div className="vl"/>
