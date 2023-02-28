@@ -3,6 +3,7 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import bg from "../images/homeBG.jpg"
 import logo from "../images/rentr.png"
+import {ConnectButton} from "web3uikit"
 
 const Home = () => {
 
@@ -23,8 +24,28 @@ const Home = () => {
         </div>
 
         <div className="lrContainers">
-          
+          <ConnectButton/>
         </div>
+      </div>
+
+      <div className="tabContent">
+        <div className="searchFields">
+        <div className="inputs">
+
+        </div>
+        <div className="vl"/>
+        <div className="inputs">
+
+        </div>
+        <div className="vl"/>
+        <div className="inputs">
+
+        </div>
+        <div className="vl"/>
+        <div className="inputs">
+        
+        </div>
+      </div>
       </div>
     </>
   );
